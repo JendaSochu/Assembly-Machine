@@ -9,7 +9,8 @@
    - [X] Configure OpenPNP to drive the 3D printer
    - [ ] Solve issue with extruder (motor does not work)
    - [ ] Go through "Issues and Solutions"
-   - [ ] Test USB camera
+   - [X] Test USB camera
+   - [ ] Camera calibration issue (chaning to another cam device)
    - [ ] Try first assembly
 
 # [ ] Mechanic compartment for free components
