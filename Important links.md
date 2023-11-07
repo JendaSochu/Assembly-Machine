@@ -1,15 +1,17 @@
-Quick Start OpenPNP https://github.com/openpnp/openpnp/wiki/Quick-Start
-User Manual https://github.com/openpnp/openpnp/wiki/User-Manual#running-a-job
-Setup and Calibration https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration
-Issues and Solutions https://github.com/openpnp/openpnp/wiki/Issues-and-Solutions
-Marlin https://github.com/openpnp/openpnp/wiki/Marlin
-Setup and Calibration_Feeders https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Feeders
-ReferenceStripFeeder https://github.com/openpnp/openpnp/wiki/ReferenceStripFeeder#tape-strip-orientation
-OpenPnP Strip Feeder Auto Setup https://www.youtube.com/watch?v=Fs-SwSq5AZw&ab_channel=OpenPnP
-Setup and Calibration_General Camera Setup https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_General-Camera-Setup#set-units-per-pixel
-Open PNP google group https://groups.google.com/g/openpnp/c/TRK5Q4vZUbc
-Video Tutorials https://github.com/openpnp/openpnp/wiki/Video-Tutorials
-Kinematic Solutions https://github.com/openpnp/openpnp/wiki/Kinematic-Solutions
-Step by step tutprial https://docs.opulo.io/openpnp/ftp/
-Setup and Calibration_Driver Setup https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Driver-Setup
-Marlin upgrade https://github.com/DerAndere1/Marlin/wiki#axis4_name
+- Quick Start OpenPNP https://github.com/openpnp/openpnp/wiki/Quick-Start
+- User Manual https://github.com/openpnp/openpnp/wiki/User-Manual#running-a-job
+- Setup and Calibration https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration
+- Issues and Solutions https://github.com/openpnp/openpnp/wiki/Issues-and-Solutions
+- Marlin https://github.com/openpnp/openpnp/wiki/Marlin
+- Setup and Calibration_Feeders https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Feeders
+- ReferenceStripFeeder https://github.com/openpnp/openpnp/wiki/ReferenceStripFeeder#tape-strip-orientation
+- OpenPnP Strip Feeder Auto Setup https://www.youtube.com/watch?v=Fs-SwSq5AZw&ab_channel=OpenPnP
+- Setup and Calibration_General Camera Setup https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_General-Camera-Setup#set-units-per-pixel
+- Open PNP google group https://groups.google.com/g/openpnp/c/TRK5Q4vZUbc
+- Video Tutorials https://github.com/openpnp/openpnp/wiki/Video-Tutorials
+- Kinematic Solutions https://github.com/openpnp/openpnp/wiki/Kinematic-Solutions
+- Step by step tutprial https://docs.opulo.io/openpnp/ftp/
+- Setup and Calibration_Driver Setup https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Driver-Setup
+- Marlin upgrade https://github.com/DerAndere1/Marlin/wiki#axis4_name
+- loose part feeder https://www.youtube.com/watch?v=GPgUi-W3RqQ&ab_channel=DerekLai
+- 
