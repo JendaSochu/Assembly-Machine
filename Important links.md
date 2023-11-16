@@ -14,4 +14,8 @@
 - Setup and Calibration_Driver Setup https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration_Driver-Setup
 - Marlin upgrade https://github.com/DerAndere1/Marlin/wiki#axis4_name
 - loose part feeder https://www.youtube.com/watch?v=GPgUi-W3RqQ&ab_channel=DerekLai
+- atmega pinout https://camo.githubusercontent.com/d386a6bdd995d9afa5b67e550871fbb2e18251360be1c058471bf664ad720510/68747470733a2f2f692e696d6775722e636f6d2f36434e6f6849342e6a7067
+- Ender 3 board schematic https://github.com/RudolphRiedel/CR-10_wiring/blob/master/Ender3_schematic.PDF
+- marlin pin changes https://github.com/jankralx/Marlin/commit/c0011c6a076900ac572b700deaddb35223e51710#diff-47b63ec149b6379e8090afca1ab4c9f2569d8ed950217e9b1c16129a749ae979
+- gcodes https://marlinfw.org/docs/gcode/M043-T.html
 - 
