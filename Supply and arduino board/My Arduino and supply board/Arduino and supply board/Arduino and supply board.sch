@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Arduino~and~supply~board-cache:MCU_Microchip_ATmega_ATmega8U2-MU U3
-U 1 1 6561175D
-P 3250 3200
-F 0 "U3" H 2650 4550 50  0000 C CNN
-F 1 "ATmega8U2-MU" H 3250 1850 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 3250 3200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 3250 3200 50  0001 C CNN
-	1    3250 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x08 IOH
 U 1 1 6561E0E1
 P 9150 2400
@@ -968,4 +957,201 @@ F 3 "" H 1900 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1900 1300
+$Comp
+L Arduino~and~supply~board-cache:ATmega16U2-MU U
+U 1 1 65693AF2
+P 3250 3200
+F 0 "U" H 3250 4667 50  0000 C CNN
+F 1 "ATmega16U2-MU" H 3250 4576 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 3250 2200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 3250 3200 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Resonator Y1
+U 1 1 656C0313
+P 2000 2500
+F 0 "Y1" V 1800 2400 50  0000 L CNN
+F 1 "16MHz" V 2200 2400 50  0000 L CNN
+F 2 "" H 1975 2500 50  0001 C CNN
+F 3 "~" H 1975 2500 50  0001 C CNN
+	1    2000 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 656C17C4
+P 2300 2650
+F 0 "R3" H 2370 2696 50  0000 L CNN
+F 1 "27R" H 2370 2605 50  0000 L CNN
+F 2 "" V 2230 2650 50  0001 C CNN
+F 3 "~" H 2300 2650 50  0001 C CNN
+	1    2300 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 656C293A
+P 1450 2500
+F 0 "R1" H 1520 2546 50  0000 L CNN
+F 1 "1M" H 1520 2455 50  0000 L CNN
+F 2 "" V 1380 2500 50  0001 C CNN
+F 3 "~" H 1450 2500 50  0001 C CNN
+	1    1450 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 2400 2250 2400
+Wire Wire Line
+	2250 2400 2250 2350
+Wire Wire Line
+	2250 2350 2000 2350
+Wire Wire Line
+	2000 2650 2150 2650
+Wire Wire Line
+	2450 2650 2500 2650
+Wire Wire Line
+	2500 2650 2500 2550
+Wire Wire Line
+	2500 2550 2550 2550
+Wire Wire Line
+	1450 2650 2000 2650
+Connection ~ 2000 2650
+Wire Wire Line
+	1450 2350 2000 2350
+Connection ~ 2000 2350
+$Comp
+L power:GND #PWR?
+U 1 1 656F987B
+P 1650 2500
+F 0 "#PWR?" H 1650 2250 50  0001 C CNN
+F 1 "GND" H 1655 2327 50  0000 C CNN
+F 2 "" H 1650 2500 50  0001 C CNN
+F 3 "" H 1650 2500 50  0001 C CNN
+	1    1650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2500 1800 2500
+$Comp
+L Jumper:SolderJumper_2_Bridged GROUND
+U 1 1 65705B3D
+P 2150 4350
+F 0 "GROUND" H 2150 4463 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 2150 4464 50  0001 C CNN
+F 2 "" H 2150 4350 50  0001 C CNN
+F 3 "~" H 2150 4350 50  0001 C CNN
+	1    2150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 65706AC5
+P 1500 4300
+F 0 "C8" H 1615 4346 50  0000 L CNN
+F 1 "1u" H 1615 4255 50  0000 L CNN
+F 2 "" H 1538 4150 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6570739F
+P 1100 4100
+F 0 "C7" H 1215 4146 50  0000 L CNN
+F 1 "100n" H 1215 4055 50  0000 L CNN
+F 2 "" H 1138 3950 50  0001 C CNN
+F 3 "~" H 1100 4100 50  0001 C CNN
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4150 1500 3650
+Wire Wire Line
+	1500 3650 2550 3650
+Wire Wire Line
+	2550 4350 2400 4350
+Wire Wire Line
+	2000 4350 1950 4350
+Wire Wire Line
+	1950 4350 1950 4650
+Wire Wire Line
+	1950 4650 1500 4650
+Wire Wire Line
+	1500 4650 1500 4450
+$Comp
+L power:GND #PWR?
+U 1 1 6572C936
+P 2400 4350
+F 0 "#PWR?" H 2400 4100 50  0001 C CNN
+F 1 "GND" H 2405 4177 50  0000 C CNN
+F 2 "" H 2400 4350 50  0001 C CNN
+F 3 "" H 2400 4350 50  0001 C CNN
+	1    2400 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 4350
+Wire Wire Line
+	2400 4350 2300 4350
+Text Label 2100 3650 0    50   ~ 0
+VUCAP
+Wire Wire Line
+	1950 4350 1950 4050
+Wire Wire Line
+	1950 4050 2550 4050
+Connection ~ 1950 4350
+Wire Wire Line
+	2400 4350 2400 3300
+Wire Wire Line
+	2400 3300 2550 3300
+Text Label 2100 4050 0    50   ~ 0
+UGND
+Wire Wire Line
+	2550 3750 2100 3750
+Text Label 2100 3750 0    50   ~ 0
+USBVCC
+Wire Wire Line
+	2550 3200 2350 3200
+Wire Wire Line
+	1100 3200 1100 3950
+$Comp
+L power:GND #PWR?
+U 1 1 657638CB
+P 1100 4250
+F 0 "#PWR?" H 1100 4000 50  0001 C CNN
+F 1 "GND" H 1105 4077 50  0000 C CNN
+F 2 "" H 1100 4250 50  0001 C CNN
+F 3 "" H 1100 4250 50  0001 C CNN
+	1    1100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65763EDD
+P 2100 3050
+F 0 "#PWR?" H 2100 2900 50  0001 C CNN
+F 1 "+5V" H 2115 3223 50  0000 C CNN
+F 2 "" H 2100 3050 50  0001 C CNN
+F 3 "" H 2100 3050 50  0001 C CNN
+	1    2100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2850 2450 2850
+Wire Wire Line
+	2450 2850 2450 3100
+Wire Wire Line
+	2450 3100 2350 3100
+Wire Wire Line
+	2100 3100 2100 3050
+Wire Wire Line
+	2350 3200 2350 3100
+Connection ~ 2350 3200
+Wire Wire Line
+	2350 3200 1100 3200
+Connection ~ 2350 3100
+Wire Wire Line
+	2350 3100 2100 3100
 $EndSCHEMATC
