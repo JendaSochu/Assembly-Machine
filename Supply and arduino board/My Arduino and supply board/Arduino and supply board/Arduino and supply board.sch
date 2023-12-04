@@ -1599,17 +1599,6 @@ CMP
 Text Label 1950 950  0    50   ~ 0
 VIN
 $Comp
-L Arduino~and~supply~board-cache:Connector_Barrel_Jack_MountingPin J1
-U 1 1 658435F4
-P 9100 1650
-F 0 "J1" H 9157 1967 50  0000 C CNN
-F 1 "Barrel_Jack_MountingPin" H 9157 1876 50  0001 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 9150 1610 50  0001 C CNN
-F 3 "~" H 9150 1610 50  0001 C CNN
-	1    9100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D1
 U 1 1 658444B1
 P 10000 1850
@@ -1758,17 +1747,6 @@ F 3 "~" H 12500 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Arduino~and~supply~board-cache:MC33269ST-5.0T3 IC1
-U 1 1 657E56D9
-P 11250 1050
-F 0 "IC1" H 11250 1392 50  0000 C CNN
-F 1 "MC33269ST-5.0T3" H 11250 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 11250 1100 50  0001 C CNN
-F 3 "" H 11250 1100 50  0001 C CNN
-	1    11250 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0130
 U 1 1 65806B0F
 P 12250 1700
@@ -1904,14 +1882,36 @@ PWRIM
 Text Label 10700 1500 2    50   ~ 0
 VIN
 $Comp
-L Arduino~and~supply~board-cache:MC33269D-5.0 IC2
-U 1 1 659797E7
+L Arduino-and-supply-board-rescue:MC33269D-5.0-Arduino_and_supply_board-cache IC2
+U 1 1 6571603C
 P 11200 1850
 F 0 "IC2" H 11200 2092 50  0000 C CNN
-F 1 "MC33269D-5.0" H 11200 2001 50  0000 C CNN
+F 1 "MC33269D-5.0-Arduino_and_supply_board-cache" H 11200 2001 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 11225 1700 50  0001 L CIN
 F 3 "" H 11200 1800 50  0001 C CNN
 	1    11200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino-and-supply-board-rescue:MC33269ST-5.0T3-Arduino_and_supply_board-cache IC1
+U 1 1 65716E1B
+P 11250 1050
+F 0 "IC1" H 11250 1392 50  0000 C CNN
+F 1 "MC33269ST-5.0T3-Arduino_and_supply_board-cache" H 11250 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 11250 1100 50  0001 C CNN
+F 3 "" H 11250 1100 50  0001 C CNN
+	1    11250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino-and-supply-board-rescue:Connector_Barrel_Jack_MountingPin-Arduino_and_supply_board-cache Conn1
+U 1 1 65719DC7
+P 9100 1650
+F 0 "Conn1" H 9157 1967 50  0000 C CNN
+F 1 "Connector_Barrel_Jack_MountingPin-Arduino_and_supply_board-cache" H 9157 1876 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 9150 1610 50  0001 C CNN
+F 3 "" H 9150 1610 50  0001 C CNN
+	1    9100 1650
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
