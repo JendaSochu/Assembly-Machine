@@ -958,7 +958,7 @@ F 3 "" H 4500 4600 50  0001 C CNN
 $EndComp
 Connection ~ 4500 4600
 $Comp
-L Arduino~and~supply~board-cache:ATmega16U2-MU U3
+L Arduino~and~supply~board-cache:Arduino_and_supply_board-cache_ATmega16U2-MU U3
 U 1 1 65693AF2
 P 5850 6500
 F 0 "U3" H 5300 7850 50  0000 C CNN
@@ -1915,7 +1915,7 @@ F 3 "" H 7500 2060 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Arduino~and~supply~board-cache:TPS629DRL U4
+L Arduino~and~supply~board-cache:Arduino_and_supply_board-cache_TPS629DRL U4
 U 1 1 6572413E
 P 13100 1500
 F 0 "U4" H 13000 1875 50  0000 C CNN

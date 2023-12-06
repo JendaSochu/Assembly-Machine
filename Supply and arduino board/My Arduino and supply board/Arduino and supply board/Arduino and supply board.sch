@@ -958,7 +958,7 @@ F 3 "" H 4500 4600 50  0001 C CNN
 $EndComp
 Connection ~ 4500 4600
 $Comp
-L Arduino~and~supply~board-cache:Arduino_and_supply_board-cache_ATmega16U2-MU U3
+L Arduino-and-supply-board-rescue:Arduino_and_supply_board-cache_ATmega16U2-MU-Arduino~and~supply~board-cache U3
 U 1 1 65693AF2
 P 5850 6500
 F 0 "U3" H 5300 7850 50  0000 C CNN
@@ -1915,17 +1915,6 @@ F 3 "" H 7500 2060 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Arduino~and~supply~board-cache:Arduino_and_supply_board-cache_TPS629DRL U4
-U 1 1 6572413E
-P 13100 1500
-F 0 "U4" H 13000 1875 50  0000 C CNN
-F 1 "TPS629DRL" H 13000 1784 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-8" H 13100 1500 50  0001 C CNN
-F 3 "" H 13100 1500 50  0001 C CNN
-	1    13100 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C Css1
 U 1 1 65724CD8
 P 12200 1850
@@ -2156,6 +2145,17 @@ F 1 "GND" H 15155 1977 50  0000 C CNN
 F 2 "" H 15150 2150 50  0001 C CNN
 F 3 "" H 15150 2150 50  0001 C CNN
 	1    15150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino~and~supply~board-cache:Arduino_and_supply_board-cache_Arduino_and_supply_board-cache_TPS629DRL U4
+U 1 1 65732BE4
+P 13100 1500
+F 0 "U4" H 13000 1875 50  0000 C CNN
+F 1 "Arduino_and_supply_board-cache_Arduino_and_supply_board-cache_TPS629DRL" H 13000 1784 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8" H 13100 1500 50  0001 C CNN
+F 3 "" H 13100 1500 50  0001 C CNN
+	1    13100 1500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
