@@ -1455,8 +1455,6 @@ Connection ~ 4650 7250
 Wire Wire Line
 	4650 7250 4650 7400
 Wire Wire Line
-	5550 7850 4850 7850
-Wire Wire Line
 	4650 7850 4650 7700
 $Comp
 L power:GND #PWR0110
@@ -1469,7 +1467,6 @@ F 3 "" H 4850 7850 50  0001 C CNN
 	1    4850 7850
 	1    0    0    -1  
 $EndComp
-Connection ~ 4850 7850
 Wire Wire Line
 	4850 7850 4650 7850
 Wire Wire Line
@@ -1695,4 +1692,13 @@ $EndComp
 Connection ~ 12000 7400
 Wire Wire Line
 	12000 7400 12350 7400
+Wire Wire Line
+	4850 7850 5450 7850
+Connection ~ 4850 7850
+Connection ~ 5450 7850
+Wire Wire Line
+	5450 7850 5550 7850
+Connection ~ 5550 7850
+Wire Wire Line
+	5550 7850 5650 7850
 $EndSCHEMATC
