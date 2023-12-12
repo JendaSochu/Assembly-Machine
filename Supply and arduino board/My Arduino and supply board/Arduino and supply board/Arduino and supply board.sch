@@ -1274,12 +1274,12 @@ $EndComp
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 657D24C2
-P 2650 6350
-F 0 "J1" H 2757 7217 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 2757 7126 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2800 6350 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2800 6350 50  0001 C CNN
-	1    2650 6350
+P 1150 6350
+F 0 "J1" H 1257 7217 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1257 7126 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1300 6350 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 6350 50  0001 C CNN
+	1    1150 6350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1349,8 +1349,6 @@ F 3 "~" H 4650 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 5750 3550 5750
-Wire Wire Line
 	4850 6100 4200 6100
 Wire Wire Line
 	4200 6100 4200 5750
@@ -1361,25 +1359,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 6500 4650 6500
 Wire Wire Line
-	3250 6350 3400 6350
-Wire Wire Line
 	4350 6500 4150 6500
-Wire Wire Line
-	3400 6500 3400 6450
-Wire Wire Line
-	3400 6450 3250 6450
-Wire Wire Line
-	3250 6550 3400 6550
-Wire Wire Line
-	3400 6550 3400 6500
-Connection ~ 3400 6500
-Wire Wire Line
-	3250 6250 3400 6250
-Wire Wire Line
-	3400 6250 3400 6350
-Connection ~ 3400 6350
-Wire Wire Line
-	3400 6350 3900 6350
 $Comp
 L power:GND #PWR0107
 U 1 1 65939B01
@@ -1394,10 +1374,6 @@ $EndComp
 Text Label 4450 6100 0    50   ~ 0
 USBVCC
 Wire Wire Line
-	2650 7250 2650 7400
-Wire Wire Line
-	2650 7400 3150 7400
-Wire Wire Line
 	3550 7400 3550 7100
 Wire Wire Line
 	3550 6800 3550 5750
@@ -1406,11 +1382,6 @@ Connection ~ 3150 7400
 Wire Wire Line
 	3150 7400 3550 7400
 Wire Wire Line
-	2350 7250 2350 7400
-Wire Wire Line
-	2350 7400 2650 7400
-Connection ~ 2650 7400
-Wire Wire Line
 	3900 6600 3900 6350
 Connection ~ 3900 6350
 Wire Wire Line
@@ -1418,8 +1389,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 6600 4150 6500
 Connection ~ 4150 6500
-Wire Wire Line
-	4150 6500 3400 6500
 Wire Wire Line
 	3900 6900 3900 7000
 Wire Wire Line
@@ -1701,4 +1670,78 @@ Wire Wire Line
 Connection ~ 5550 7850
 Wire Wire Line
 	5550 7850 5650 7850
+$Comp
+L Power_Protection:USBLC6-2P6 U6
+U 1 1 6579E1C3
+P 2650 6400
+F 0 "U6" V 3100 6150 50  0000 L CNN
+F 1 "USBLC6-2P6" V 3150 6300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-666" H 2650 5900 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2850 6750 50  0001 C CNN
+	1    2650 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 6250 2100 6250
+Wire Wire Line
+	2100 6250 2100 6000
+Wire Wire Line
+	2100 6000 2550 6000
+Connection ~ 2550 6000
+Wire Wire Line
+	2550 6000 2750 6000
+Connection ~ 2750 6000
+Wire Wire Line
+	2750 6000 3250 6000
+Wire Wire Line
+	3250 6000 3250 6350
+Wire Wire Line
+	3250 6350 3900 6350
+Wire Wire Line
+	1750 6350 2100 6350
+Wire Wire Line
+	2100 6350 2100 6250
+Connection ~ 2100 6250
+Wire Wire Line
+	1750 6550 2100 6550
+Wire Wire Line
+	2100 6550 2100 6800
+Wire Wire Line
+	2100 6800 2550 6800
+Connection ~ 2550 6800
+Wire Wire Line
+	2550 6800 2750 6800
+Connection ~ 2750 6800
+Wire Wire Line
+	2750 6800 3250 6800
+Wire Wire Line
+	3250 6500 3250 6800
+Wire Wire Line
+	3250 6500 4150 6500
+Wire Wire Line
+	1750 6450 2100 6450
+Wire Wire Line
+	2100 6450 2100 6550
+Connection ~ 2100 6550
+Wire Wire Line
+	850  7250 850  7400
+Wire Wire Line
+	850  7400 1150 7400
+Wire Wire Line
+	1150 7250 1150 7400
+Connection ~ 1150 7400
+Wire Wire Line
+	1150 7400 2250 7400
+Wire Wire Line
+	1750 5750 3050 5750
+Wire Wire Line
+	2250 6400 2250 7400
+Connection ~ 2250 7400
+Wire Wire Line
+	2250 7400 3150 7400
+Wire Wire Line
+	3050 6400 3050 5750
+Connection ~ 3050 5750
+Wire Wire Line
+	3050 5750 3550 5750
 $EndSCHEMATC
