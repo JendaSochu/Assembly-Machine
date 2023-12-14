@@ -621,8 +621,8 @@ L Device:D D1
 U 1 1 658444B1
 P 8350 2300
 F 0 "D1" H 8350 2083 50  0000 C CNN
-F 1 "M7" H 8350 2174 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 8350 2300 50  0001 C CNN
+F 1 "1N4007" H 8350 2174 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 8350 2300 50  0001 C CNN
 F 3 "~" H 8350 2300 50  0001 C CNN
 	1    8350 2300
 	-1   0    0    1   
@@ -777,7 +777,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 2300 9250 2300
 Wire Wire Line
-	8500 2300 8850 2300
+	8500 2300 8600 2300
 Connection ~ 8850 2300
 Wire Wire Line
 	10600 2150 10600 2300
@@ -884,7 +884,7 @@ U 1 1 657270CA
 P 11000 1450
 F 0 "Vin1" H 10918 1217 50  0000 C CNN
 F 1 "Conn_01x02" H 10918 1216 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11000 1450 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 11000 1450 50  0001 C CNN
 F 3 "~" H 11000 1450 50  0001 C CNN
 	1    11000 1450
 	-1   0    0    1   
@@ -917,10 +917,10 @@ U 1 1 65781F86
 P 15700 1750
 F 0 "Vout1" H 15780 1696 50  0000 L CNN
 F 1 "Conn_01x02" H 15780 1651 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 15700 1750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 15700 1750 50  0001 C CNN
 F 3 "~" H 15700 1750 50  0001 C CNN
 	1    15700 1750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11200 1350 11400 1350
@@ -1013,15 +1013,13 @@ Connection ~ 14400 1450
 Wire Wire Line
 	14800 1450 15150 1450
 Wire Wire Line
-	15500 1450 15500 1750
+	15500 1450 15500 1650
 Connection ~ 14800 1450
 Wire Wire Line
 	15150 1650 15150 1450
 Connection ~ 15150 1450
 Wire Wire Line
 	15150 1450 15500 1450
-Wire Wire Line
-	15500 1850 15500 2150
 Wire Wire Line
 	15500 2150 15150 2150
 Wire Wire Line
@@ -1496,7 +1494,7 @@ U 1 1 65DE4847
 P 7550 2100
 F 0 "Vin2" H 7468 1867 50  0000 C CNN
 F 1 "Conn_01x02" H 7468 1866 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7550 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 7550 2100 50  0001 C CNN
 F 3 "~" H 7550 2100 50  0001 C CNN
 	1    7550 2100
 	-1   0    0    1   
@@ -1744,4 +1742,29 @@ Wire Wire Line
 Connection ~ 3050 5750
 Wire Wire Line
 	3050 5750 3550 5750
+$Comp
+L Device:D D2
+U 1 1 657C3DFA
+P 11850 650
+F 0 "D2" H 11850 867 50  0000 C CNN
+F 1 "1N4007" H 11850 776 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 11850 650 50  0001 C CNN
+F 3 "~" H 11850 650 50  0001 C CNN
+	1    11850 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15500 1450 15500 650 
+Wire Wire Line
+	15500 650  12000 650 
+Connection ~ 15500 1450
+Wire Wire Line
+	11700 650  8600 650 
+Wire Wire Line
+	8600 650  8600 2300
+Connection ~ 8600 2300
+Wire Wire Line
+	8600 2300 8850 2300
+Wire Wire Line
+	15500 1750 15500 2150
 $EndSCHEMATC
