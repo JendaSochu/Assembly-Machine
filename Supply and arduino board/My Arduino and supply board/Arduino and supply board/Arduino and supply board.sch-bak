@@ -884,7 +884,7 @@ U 1 1 657270CA
 P 11000 1450
 F 0 "Vin1" H 10918 1217 50  0000 C CNN
 F 1 "Conn_01x02" H 10918 1216 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11000 1450 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 11000 1450 50  0001 C CNN
 F 3 "~" H 11000 1450 50  0001 C CNN
 	1    11000 1450
 	-1   0    0    1   
@@ -917,10 +917,10 @@ U 1 1 65781F86
 P 15700 1750
 F 0 "Vout1" H 15780 1696 50  0000 L CNN
 F 1 "Conn_01x02" H 15780 1651 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 15700 1750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 15700 1750 50  0001 C CNN
 F 3 "~" H 15700 1750 50  0001 C CNN
 	1    15700 1750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11200 1350 11400 1350
@@ -1013,15 +1013,13 @@ Connection ~ 14400 1450
 Wire Wire Line
 	14800 1450 15150 1450
 Wire Wire Line
-	15500 1450 15500 1750
+	15500 1450 15500 1650
 Connection ~ 14800 1450
 Wire Wire Line
 	15150 1650 15150 1450
 Connection ~ 15150 1450
 Wire Wire Line
 	15150 1450 15500 1450
-Wire Wire Line
-	15500 1850 15500 2150
 Wire Wire Line
 	15500 2150 15150 2150
 Wire Wire Line
@@ -1120,17 +1118,6 @@ F 1 "MC33269ST-5.0T3" H 9600 1751 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 9600 1500 50  0001 C CNN
 F 3 "" H 9600 1500 50  0001 C CNN
 	1    9600 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Assembly_board_schem:TPS629DRL U5
-U 1 1 657CF2BB
-P 13000 1550
-F 0 "U5" H 13000 1975 50  0000 C CNN
-F 1 "TPS629DRL" H 13000 1884 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-8" H 13000 1550 50  0001 C CNN
-F 3 "" H 13000 1550 50  0001 C CNN
-	1    13000 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1496,7 +1483,7 @@ U 1 1 65DE4847
 P 7550 2100
 F 0 "Vin2" H 7468 1867 50  0000 C CNN
 F 1 "Conn_01x02" H 7468 1866 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7550 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 7550 2100 50  0001 C CNN
 F 3 "~" H 7550 2100 50  0001 C CNN
 	1    7550 2100
 	-1   0    0    1   
@@ -1767,4 +1754,17 @@ Wire Wire Line
 Connection ~ 8600 2300
 Wire Wire Line
 	8600 2300 8850 2300
+Wire Wire Line
+	15500 1750 15500 2150
+$Comp
+L Assembly_board_schem:MP4581GN-P U?
+U 1 1 658409AE
+P 13000 1550
+F 0 "U?" H 13000 1975 50  0000 C CNN
+F 1 "MP4581GN-P" H 13000 1884 50  0000 C CNN
+F 2 "" H 13000 1550 50  0001 C CNN
+F 3 "" H 13000 1550 50  0001 C CNN
+	1    13000 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
