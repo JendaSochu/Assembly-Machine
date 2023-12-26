@@ -152,17 +152,6 @@ F 3 "~" H 8750 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 POWER1
-U 1 1 6566271D
-P 9100 4150
-F 0 "POWER1" H 9050 4450 50  0000 L CNN
-F 1 "Conn_01x06" H 9180 4051 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9100 4150 50  0001 C CNN
-F 3 "~" H 9100 4150 50  0001 C CNN
-	1    9100 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0103
 U 1 1 65663E3E
 P 8750 5000
@@ -179,11 +168,7 @@ Wire Wire Line
 	8750 5400 8750 5300
 Wire Wire Line
 	8750 5400 8500 5400
-Wire Wire Line
-	8500 3950 8900 3950
 Connection ~ 8750 5400
-Wire Wire Line
-	8900 4050 8650 4050
 Wire Wire Line
 	8900 4150 8600 4150
 Wire Wire Line
@@ -210,8 +195,6 @@ Wire Wire Line
 	8650 4350 8650 4550
 Wire Wire Line
 	8900 4450 8700 4450
-Text Label 8650 4050 0    50   ~ 0
-+3V3
 Text Label 8700 4450 0    50   ~ 0
 VIN+12V
 $Comp
@@ -225,7 +208,7 @@ F 3 "" H 8600 3600 50  0001 C CNN
 	1    8600 3600
 	1    0    0    -1  
 $EndComp
-Text Label 8700 3950 0    50   ~ 0
+Text Label 8700 4050 0    50   ~ 0
 RESET
 Text Label 8500 5400 0    50   ~ 0
 RESET
@@ -989,8 +972,6 @@ F 3 "" H 4850 7850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 7850 4650 7850
-Wire Wire Line
-	8500 3950 8500 5400
 Wire Wire Line
 	7600 5800 7850 5800
 Text Label 6550 7250 0    50   ~ 0
@@ -1866,4 +1847,19 @@ Text Label 10150 5700 0    50   ~ 0
 MOSI
 Text Label 10850 900  0    50   ~ 0
 VOUT+12V
+$Comp
+L Connector_Generic:Conn_01x05 J9
+U 1 1 65BBFA66
+P 9100 4250
+F 0 "J9" H 9180 4292 50  0000 L CNN
+F 1 "Conn_01x05" H 9180 4201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9100 4250 50  0001 C CNN
+F 3 "~" H 9100 4250 50  0001 C CNN
+	1    9100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4050 8500 4050
+Wire Wire Line
+	8500 4050 8500 5400
 $EndSCHEMATC
